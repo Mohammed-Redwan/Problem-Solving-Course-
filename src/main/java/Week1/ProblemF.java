@@ -14,7 +14,7 @@ import java.util.Scanner;
  */
 public class ProblemF {
 
-    public void main(String[] args) {
+    public void solve() {
         Scanner in = new Scanner(System.in);
         int t = in.nextInt();
         in.nextLine();
