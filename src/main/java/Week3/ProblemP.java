@@ -1,17 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+// Worms Problem
 package Week3;
 
 import java.util.*;
 
-public class Main {
-
-    public static void main(String[] args) {
-        solve();
-    }
+public class ProblemP {
 
     public static void solve() {
         Scanner input = new Scanner(System.in);
@@ -24,7 +16,7 @@ public class Main {
             int prev = piles.get(i - 1).last;
             piles.add(new Pile(prev + 1, prev + a));
         }
-
+        
         int m = input.nextInt();
         for (int i = 0; i < m; i++) {
             int q = input.nextInt();
@@ -54,7 +46,6 @@ public class Main {
             this.first = first;
             this.last = last;
         }
-
         public boolean isBigger(int num) {
             if (num > last) {
                 return true;
@@ -69,4 +60,5 @@ public class Main {
             return false;
         }
     }
+
 }
